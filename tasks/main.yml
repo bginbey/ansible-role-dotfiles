@@ -1,7 +1,7 @@
 ---
 - name: Ensure dotfiles local directory is not present in home folder
   file:
-    src: "{{ dotfiles_repo_local_destination }}"
+    path: "{{ dotfiles_repo_local_destination }}"
     state: absent
     force: true
   become: false
